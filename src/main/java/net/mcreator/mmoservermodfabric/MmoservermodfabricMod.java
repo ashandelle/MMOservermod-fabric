@@ -15,6 +15,8 @@ package net.mcreator.mmoservermodfabric;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
+import net.mcreator.mmoservermodfabric.init.MmoservermodfabricModCommands;
+
 import net.fabricmc.api.ModInitializer;
 
 public class MmoservermodfabricMod implements ModInitializer {
@@ -24,6 +26,8 @@ public class MmoservermodfabricMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		LOGGER.info("Initializing MmoservermodfabricMod");
+
+		MmoservermodfabricModCommands.load();
 
 	}
 }
